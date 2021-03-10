@@ -1,1 +1,1 @@
-{"appId":"io.readytapio.app","appName":"ReayTapIO","bundledWebRuntime":false,"webDir":"dist"}
+{"appId":"io.readytapio.app","appName":"ReadyTapIO","bundledWebRuntime":false,"webDir":"dist","server":{"url":"http://192.168.1.50:8095"}}

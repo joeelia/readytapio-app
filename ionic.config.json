@@ -1,0 +1,7 @@
+{
+  "name": "fds",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

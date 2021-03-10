@@ -936,6 +936,27 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@ionic-native/core@^5.31.1":
+  version "5.31.1"
+  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-5.31.1.tgz#189d67f20b46cfe7930091fa382539efafa8d03b"
+  integrity sha512-dbJHezSuY8OqyFwyQiS+5QscA/BONhWitXgniljEblC5kQeLOCe+8p30JYHXj9xDciYzfqFP8ICmyaGOqUHJYw==
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/nfc@^5.31.1":
+  version "5.31.1"
+  resolved "https://registry.yarnpkg.com/@ionic-native/nfc/-/nfc-5.31.1.tgz#5359285b92c517084e05b48c082e5cbdd5a7fe99"
+  integrity sha512-6BqBBFN36cGGHoptA524IxPNT87YwSyqJkxKmbvNH6Pm6nXA5xmQyi8YCFct0NZBb2J8oPrbkGablne650xkVg==
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/status-bar@^5.31.1":
+  version "5.31.1"
+  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-5.31.1.tgz#8e45830a52262927e0389479d221a389cd973e0f"
+  integrity sha512-o5gugiuyYjWqQqzajbfqYKvuWX0BSTppwoLXU0PidgvBWtw3yBb7z4FZoo6JQSkUVn2AWYD1XEj/4KKh9D4Pkg==
+  dependencies:
+    "@types/cordova" latest
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1019,6 +1040,11 @@
   integrity sha512-ePPA/JuI+X0vb+gSWlPKOY0NdNAie/rPUqX2GUPpbZwiKTkSPhjXWuee47E4MtE54QVzGCQMQkAL6JhV2E1+cQ==
   dependencies:
     "@types/node" "*"
+
+"@types/cordova@latest":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@types/cordova/-/cordova-0.0.34.tgz#ea7addf74ecec3d7629827a0c39e2c9addc73d04"
+  integrity sha1-6nrd907Ow9dimCegw54smt3HPQQ=
 
 "@types/express-serve-static-core@*", "@types/express-serve-static-core@^4.17.18":
   version "4.17.18"
@@ -1308,7 +1334,7 @@
     webpack "^4.0.0"
     yorkie "^2.0.0"
 
-"@vue/cli-plugin-router@^4.5.11":
+"@vue/cli-plugin-router@^4.5.11", "@vue/cli-plugin-router@~4.5.0":
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-router/-/cli-plugin-router-4.5.11.tgz#3b6df738c5a1a5f50376822bf661d9a3b0c3fa62"
   integrity sha512-09tzw3faOs48IUPwLutYaNC7eoyyL140fKruTwdFdXuBLDdSQVida57Brx0zj2UKXc5qF8hk4GoGrOshN0KfNg==
@@ -2356,9 +2382,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181:
-  version "1.0.30001197"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001197.tgz#47ad15b977d2f32b3ec2fe2b087e0c50443771db"
-  integrity sha512-8aE+sqBqtXz4G8g35Eg/XEaFr2N7rd/VQ6eABGBmNtcB8cN6qNJhMi6oSFy4UWWZgqgL3filHT8Nha4meu3tsw==
+  version "1.0.30001198"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001198.tgz#ed2d9b5f060322ba2efa42afdc56dee3255473f4"
+  integrity sha512-r5GGgESqOPZzwvdLVER374FpQu2WluCF1Z2DSiFJ89KSmGjT0LVKjgv4NcAqHmGWF9ihNpqRI9KXO9Ex4sKsgA==
 
 case-sensitive-paths-webpack-plugin@^2.3.0:
   version "2.4.0"
@@ -2794,6 +2820,11 @@ copy-webpack-plugin@^5.1.1:
     schema-utils "^1.0.0"
     serialize-javascript "^4.0.0"
     webpack-log "^2.0.0"
+
+cordova-plugin-statusbar@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.4.3.tgz#cc557aef66c27484e0f7f045004040d03321f82d"
+  integrity sha512-ThmXzl6QIKWFXf4wWw7Q/zpB+VKkz3VM958+5A0sXD4jmR++u7KnGttLksXshVwWr6lvGwUebLYtIyXwS4Ovcg==
 
 core-js-compat@^3.6.5, core-js-compat@^3.8.1, core-js-compat@^3.9.0:
   version "3.9.1"
@@ -6352,6 +6383,11 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+phonegap-nfc@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/phonegap-nfc/-/phonegap-nfc-1.2.0.tgz#212ecef79df68a2c5321b0930087fd4d3d5a5937"
+  integrity sha512-RknLWWEqHv4VxMT6YPsOccgGvtzXhvEpvo+8+/zRYQCmw6QBwdUkPmYPPMCmeFQRcZJuqUI23kqxHGcub0Otag==
+
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
@@ -8491,6 +8527,11 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.2.0:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.1.tgz#edf3cf4907952d1e0583e079237220c5ff6eb6c9"
+  integrity sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"
