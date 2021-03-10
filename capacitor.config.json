@@ -4,6 +4,6 @@
   "bundledWebRuntime": false,
   "webDir": "dist",
   "ios": {
-    "contentInset": "never",
+    "contentInset": "never"
   }
 }
