@@ -2,7 +2,7 @@
   <button
     @click="startScan()"
     type="button"
-    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
   >
     Scan Tag
   </button>
@@ -11,6 +11,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import { NFC } from "@ionic-native/nfc";
+import Haptic from "@/utils/Haptic";
 export default {
   name: "NFCScan",
   data() {
@@ -23,6 +24,7 @@ export default {
   },
   methods: {
     startScan() {
+      Haptic.impactHeavy();
       NFC.scanTag().then(
         tag => {
           console.log(JSON.stringify(tag));

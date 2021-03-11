@@ -1,15 +1,15 @@
 <template>
   <!-- component -->
   <div class="w-full h-screen">
-    <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
+    <!-- <section id="bottom-navigation" class="fixed inset-x-0 bottom-0 z-10 block bg-white shadow md:hidden"> // if shown only tablet/mobile-->
     <section
       id="bottom-navigation"
-      class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow"
+      class="fixed inset-x-0 bottom-0 z-10 block bg-white shadow"
     >
       <div id="tabs" class="flex justify-between">
         <router-link
           to="/"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          class="justify-center inline-block w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
         >
           <svg
             width="25"
@@ -54,11 +54,11 @@
               ></rect>
             </g>
           </svg>
-          <span class="tab tab-home block text-xs">Home</span>
+          <span class="block text-xs tab tab-home">Home</span>
         </router-link>
         <router-link
           to="/tags"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          class="justify-center inline-block w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
         >
           <svg
             width="25"
@@ -103,11 +103,11 @@
               </g>
             </g>
           </svg>
-          <span class="tab tab-kategori block text-xs">Tags</span>
+          <span class="block text-xs tab tab-kategori">Tags</span>
         </router-link>
         <router-link
           to="/redeem"
-          class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+          class="justify-center inline-block w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
         >
           <svg
             width="25"
@@ -135,7 +135,7 @@
               ></circle>
             </g>
           </svg>
-          <span class="tab tab-explore block text-xs">Redeem</span>
+          <span class="block text-xs tab tab-explore">Redeem</span>
         </router-link>
       </div>
     </section>
@@ -147,6 +147,15 @@ export default {
   name: "BottomNav",
   props: {
     title: String
+  },
+  created() {
+    document.addEventListener("deviceready", navigator.vibrate, false);
+  },
+  methods: {
+    clickTab() {
+      navigator.vibrate(200);
+      console.log("viberate");
+    }
   }
 };
 </script>
