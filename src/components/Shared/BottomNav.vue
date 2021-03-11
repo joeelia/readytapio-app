@@ -159,3 +159,8 @@ export default {
   }
 };
 </script>
+<style>
+.router-link-exact-active svg {
+  @apply bg-blue-100 rounded-full h-8 w-10;
+}
+</style>
