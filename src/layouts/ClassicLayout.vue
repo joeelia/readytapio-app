@@ -11,6 +11,6 @@
 import BottomNav from "@/components/Shared/BottomNav.vue";
 export default {
   name: "ClassicLayout",
-  components: { BottomNav },
+  components: { BottomNav }
 };
 </script>
