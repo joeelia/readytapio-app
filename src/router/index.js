@@ -8,7 +8,10 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+    meta: {
+      template: "ClassicLayout"
+    }
   },
   {
     path: "/tags",
@@ -16,7 +19,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/Tags.vue")
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Tags.vue"),
+    meta: {
+      template: "ClassicLayout"
+    }
   },
   {
     path: "/redeem",
@@ -25,7 +32,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Redeem.vue")
+      import(/* webpackChunkName: "about" */ "../views/Redeem.vue"),
+    meta: {
+      template: "ClassicLayout"
+    }
+  },
+  {
+    path: "/login",
+    name: "Login",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Login.vue"),
+    meta: {
+      template: "BlankLayout"
+    }
   }
 ];
 

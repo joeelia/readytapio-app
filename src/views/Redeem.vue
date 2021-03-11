@@ -1,7 +1,9 @@
 <template>
-  <div class="redeem">
-    <h1>redeem....</h1>
-  </div>
+  <classic-layout>
+    <div class="redeem">
+      <h1>redeem....</h1>
+    </div>
+  </classic-layout>
 </template>
 <script>
 // @ is an alias to /src

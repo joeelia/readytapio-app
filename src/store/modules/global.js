@@ -5,7 +5,7 @@ const state = {
 const mutations = {
   increment(state) {
     state.launched++;
-    console.log("working")
+    console.log("working");
   }
 };
 const actions = {};
